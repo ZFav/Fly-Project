@@ -1,12 +1,111 @@
+:root{
+    --primary-presto : #06a3da;
+    --text-header: white;
+    --text-header-contrast : black
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 h1, h2, h3, h4, h5 ,h6, .h1, .h2, .h3, .h4, .h5 {
     font-family: 'Montserrat', sans-serif;
 
 }
 
-:root{
-    --primary: #06a3da;
+
+.text-presto {
+    color: var(--primary-presto);
+}   
+
+.bg-presto {
+    background-color: var(--primary-presto);
+}   
+
+.btn-presto {
+    padding: 5px 25px;
+    background-color: var(--primary-presto);
+    color: var(--text-header);
+    border-radius: 2px;
+}   
+
+.btn-presto:hover{
+    background-color: var(--primary-presto);
 }
 
-.bnt-presto {
-    background-color: var(--primary);
-}   
+.nav-link .navbar {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: var(--text-header);
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.navbar.bg-white .nav-link {
+    color: var(--text-header-contrast);
+}
+
+.navbar .nav-item .nav-link-icon-presto {
+    color: var(--primary-presto);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: var(--primary-presto);
+}
+
+
+.nav-item {
+    position: relative;
+    padding: 30px 0px;
+    transition: all linear 300ms;
+}
+
+.navbar .navbar-brand {
+    color: var(--text-header);
+}
+
+.navbar.bg-white .navbar-brand {
+    color: var(--primary-presto);
+}
+
+#mainNavbar {
+    border-color: rgb(171, 171, 171);
+}
+
+.navbar-nav .mav-link.active::after{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 70%;
+    background-color: var(--primary-presto);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--primary-presto);
+}
+
+.navbar-nav .nav-link::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    display: inline-block;
+    content: '';
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-presto);
+    transform: translateX(-50%);
+    transition: all linear 250ms;
+}
+
+.navbar-nav .nav-link:hover::before {
+    width: 70%;
+}
+
+.navbar.thin .nav-item {
+    padding: 15px 0;
+}                
