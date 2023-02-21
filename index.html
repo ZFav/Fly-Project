@@ -10,16 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 
 
   </head>
   <body class="bg-primary">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg border-bottom bg-body-tertiary p-0 fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg border-bottom p-0" id="mainNav">
         <div class="container-fluid ">
           <a class="navbar-brand fs-3 fw-bold" href="#"><i class="fa-solid fa-car-side me-2"></i>Cratia</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -42,17 +43,62 @@
                   <a class="nav-link" href="#">Contatti</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-icon-presto" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a class="nav-link nav-link-icon-presto ms-lg-0 ms-2" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
               </li>
             </ul>
-            <button class="btn btn-presto ms-2">Auto Nuove</button>
+            <button class="btn btn-presto ms-lg-2 ms-4">Auto Nuove</button>
           </div>
         </div>
       </nav>
 
 
+<!-- carosello  -->
+<section id="masterhead">
+  <div id="carouselPresto" class="carousel slide carousel-fade">
+    <div class="carousel-inner">
+      <div class="carousel-item active overlay">
+        <div class="position-absolute top-50 start-50 translate-middle z-1 d-flex justify-content-center flex-column align-items-center">
+        <span class="fs-4">CREA</span>
+        <span class="display-1 fw-bolder mb-5">Il tuo annuncio</span>
+          <div class="d-flex justify-content-around w-100">
+            <button class="btn btn-big-presto">Iscriviti</button>
+            <button class="btn btn-white-presto">Contattaci</button>
+          </div>
+        </div>
+      
+          <img src="https://images.wallpaperscraft.com/image/single/building_windows_architecture_838165_1920x1080.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
 
+      <div class="carousel-item active overlay">
+        <div class="position-absolute top-50 start-50 translate-middle z-1 d-flex justify-content-center flex-column align-items-center">
+        <span class="fs-4">CONTRATTA</span>
+        <span class="display-1 fw-bolder mb-5">Il tuo prodotto</span>
+          <div class="d-flex justify-content-around w-100">
+            <button class="btn btn-big-presto">Iscriviti</button>
+            <button class="btn btn-white-presto">Contattaci</button>
+          </div>
+        </div>
+      <img src="https://images.wallpaperscraft.com/image/single/camera_hand_silhouette_838382_1920x1080.jpg" class="d-block w-100" alt="Slide 2">
+      </div>
 
+      <div class="carousel-item active overlay">
+        <div class="position-absolute top-50 start-50 translate-middle z-1 d-flex justify-content-center flex-column align-items-center">
+        <span class="fs-4">ACCETTA</span>
+        <span class="display-1 fw-bolder mb-5">Il tuo prezzo</span>
+          <div class="d-flex justify-content-around w-100">
+            <button class="btn btn-big-presto">Iscriviti</button>
+            <button class="btn btn-white-presto">Contattaci</button>
+          </div>
+        </div>
+          <img src="https://images.wallpaperscraft.com/image/single/ice_shard_beach_838337_1920x1080.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselPresto" data-bs-slide="prev">  <i class="fa-solid fa-chevron-left display-1"></i>  
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselPresto" data-bs-slide="next">  <i class="fa-solid fa-chevron-right display-1"></i>
+    </button>
+  </div>
+</section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

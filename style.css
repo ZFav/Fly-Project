@@ -33,7 +33,10 @@ h1, h2, h3, h4, h5 ,h6, .h1, .h2, .h3, .h4, .h5 {
     background-color: var(--primary-presto);
 }
 
-.nav-link .navbar {
+#masterhead{
+    color: white;
+}
+.navbar .nav-link {
     display: block;
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
@@ -70,11 +73,16 @@ h1, h2, h3, h4, h5 ,h6, .h1, .h2, .h3, .h4, .h5 {
     color: var(--primary-presto);
 }
 
-#mainNavbar {
+#mainNav {
     border-color: rgb(171, 171, 171);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
 }
 
-.navbar-nav .mav-link.active::after{
+.navbar-nav .nav-link.active::after{
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -82,6 +90,7 @@ h1, h2, h3, h4, h5 ,h6, .h1, .h2, .h3, .h4, .h5 {
     content: '';
     height: 2px;
     width: 70%;
+    transform: translateX(-50%);
     background-color: var(--primary-presto);
 }
 
@@ -108,4 +117,45 @@ h1, h2, h3, h4, h5 ,h6, .h1, .h2, .h3, .h4, .h5 {
 
 .navbar.thin .nav-item {
     padding: 15px 0;
-}                
+}            
+
+.navbar-toggler{
+    padding: 5px 10px;
+    border-color: var(--primary-presto);
+    border-radius: 2px;
+}
+
+.overlay::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+}
+
+
+.btn-white-presto {
+    padding: 15px 30px;
+    color: var(--text-header);
+    border-radius: 2px;
+    border: 1px solid white;
+}   
+
+.btn-white-presto:hover{
+    color: var(--text-header-contrast);
+    background-color: white;
+}
+
+.btn-big-presto {
+    padding: 15px 40px;
+    background-color: var(--primary-presto);
+    color: var(--text-header);
+    border-radius: 2px;
+}   
+
+.btn-big-presto:hover{
+    background-color: var(--primary-presto);
+    color: var(--text-header-contrast);
+}
