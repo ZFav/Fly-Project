@@ -29,5 +29,10 @@
         height: 0;
     }
    
+    .pos-info{
+        transform: translate(0,0);
+        left: 0;
+        position: relative;
+    }
 
 } 

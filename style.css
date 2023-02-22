@@ -159,3 +159,10 @@ h1, h2, h3, h4, h5 ,h6, .h1, .h2, .h3, .h4, .h5 {
     background-color: var(--primary-presto);
     color: var(--text-header-contrast);
 }
+
+.pos-info{
+    transform: translate(-50%,-50%);
+    left: 50%;
+    position: relative;
+}
+
